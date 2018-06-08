@@ -12,6 +12,7 @@ end
 
 namespace :db do
     desc 'migrating database that alters database'
-    task :migrate do
+    task :migrate => :environment do
+      Student.create_table
   end
 end

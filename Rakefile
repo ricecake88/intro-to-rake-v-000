@@ -9,3 +9,9 @@ task :hola do
   puts "hola de Rake!"
 end
 end
+
+namespace :db do
+    desc 'migrating database that alters database'
+    task :migrate do
+  end
+end

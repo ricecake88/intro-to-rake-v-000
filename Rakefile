@@ -4,7 +4,7 @@ namespace :db do
     './config/environment.'
   end  
     desc 'migrating database that alters database'
-    task :migrate => db:environment do
+    task :migrate => :environment do
       Student.create_table
      end
 
